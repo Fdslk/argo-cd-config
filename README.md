@@ -53,3 +53,13 @@
   * how to make the argo cd config work
   </br> ```kubectl apply -f application.yaml```
   ![result](https://user-images.githubusercontent.com/6279298/146899503-9dc092c7-d330-493b-aa65-ca0b1de3b1b2.png)
+
+## noted
+
+* if your repository is not a public repo, it will need to be public or config authorization
+* must use the stable manifest for argocd install.yaml
+  * </br>```kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml```
+  * issue: cannot async
+* ```syncOptions: - CreateNameSpace=true```
+ not use,
+     cannot create a namespace automatically.
