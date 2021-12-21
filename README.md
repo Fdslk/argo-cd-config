@@ -48,4 +48,8 @@
         "selfLink": "/api/v1/namespaces/argocd/secrets/argocd-initial-admin-secret",
         "uid": "0d60128c-7140-429e-89e9-6fe59ae9e86d"
     },
-    "type": "Opaque"}```
+    "type": "Opaque"}
+
+  * how to make the argo cd config work
+  </br> ```kubectl apply -f application.yaml```
+  ![result](https://user-images.githubusercontent.com/6279298/146899503-9dc092c7-d330-493b-aa65-ca0b1de3b1b2.png)
