@@ -10,12 +10,12 @@
     </br>``` kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml ```
   * check argo cd resource
     </br>``` kubectl get pods -n argocd ```
-     ![result](/images/argocdpods.png)
+     ![result](https://user-images.githubusercontent.com/6279298/146896505-bcead6e6-4078-4fd0-ac29-287ec4f0299a.png)
   * how to see argocd UI
     </br>```kubectl get svc -n argocd```
-     ![result](/images/getargocdsvc.png)
+     ![result](https://user-images.githubusercontent.com/6279298/146896613-315f5aae-e7cd-42f7-8ebe-fd5ba90ac587.png)
     </br>```kubectl port-forward -n argocd svc/argocd-server 8080:443```
-     ![result](/images/argocdUI.png)
+     ![result](https://user-images.githubusercontent.com/6279298/146896604-014cd48b-fbc2-4f8e-b68c-0ca801ebbdf9.png)
   * how to login argo ci ui
     </br>```kubectl get secret argocd-initial-admin-secret -n argocd  -o yaml```
     ```{
