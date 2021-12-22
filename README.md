@@ -1,5 +1,7 @@
 # how to set up argo-cd-config
 
+* pre
+
 * defination
   * argo cd is a common CD tool for kubernates
 
@@ -49,7 +51,9 @@
         "uid": "0d60128c-7140-429e-89e9-6fe59ae9e86d"
     },
     "type": "Opaque"}
-
+ 
+  * decode pwd by base64
+  </br>```echo QXp0TnVWZWVra1NSa3Jxdw== | base64 --decode```
   * how to make the argo cd config work
   </br> ```kubectl apply -f application.yaml```
   ![result](https://user-images.githubusercontent.com/6279298/146899503-9dc092c7-d330-493b-aa65-ca0b1de3b1b2.png)
